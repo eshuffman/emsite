@@ -4,7 +4,7 @@ import './AboutMe.css';
 function AboutMe() {
 
   return (
-    <div className={stylingOn === true ? "outer-body" : null}>
+    <div >
         <p>This page is all about me!</p>
     </div>
   );
