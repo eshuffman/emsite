@@ -7,14 +7,15 @@ function App() {
 
   
   return (
-    <div>
+    <div className={stylingOn === true ? "outer-body" : null}>
+      <div>
       <div className={stylingOn === true ? "body" : null}>
-        <h1>Emily Huffman</h1>
-        <h2>Software Engineer | Writer | Child-Wrangler</h2>
-        <p>Hi! I'm Emily. Welcome to my little spot on the web! You may notice it looks pretty boring around here. If you want to fancy it up, feel free to push the button below.</p>
-        <p>Styling is {stylingOn}</p>
+        <h1 className={stylingOn === true ? "h1" : null}>Emily Huffman</h1>
+        <h2 className={stylingOn === true ? "h2" : null}>Software Engineer | Writer | Child-Wrangler</h2>
+        <p className={stylingOn === true ? "paragraph" : null}>Hi! I'm Emily. Welcome to my little spot on the web! You may notice it looks pretty boring around here. If you want to fancy it up, feel free to push the button below.</p>
       </div>
-      <button onClick={(() => setStylingOn(!stylingOn))}>Push me!</button>
+      <button className={stylingOn === true ? "button" : null} onClick={(() => setStylingOn(!stylingOn))}>Push me!</button>
+      </div>    
     </div>
   );
 }

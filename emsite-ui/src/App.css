@@ -1,5 +1,47 @@
 
+.outer-body {
+  display: flex;
+  justify-content: center;
+}
+
 .body {
-  color: blueviolet;
-  background-color: aqua;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  width: 80vh;
+  height: 80vh;
+  border: 3px solid gray;
+  border-radius: 5px;
+  flex-flow: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.h1 {
+  
+}
+
+.h2 {
+
+}
+
+.paragraph {
+
+}
+
+.button {
+
+  background-color: darkorange;
+  border-radius: 5px;
+  color: whitesmoke;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  border: none
+}
+
+.button:hover{
+  background-color: rgb(217, 120, 1);
 }
