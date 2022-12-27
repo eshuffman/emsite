@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Home.css';
 
-function Home() {
+function Home({stylingOn, setStylingOn}) {
 
-  const [stylingOn, setStylingOn] = useState(false)
-
+  
 
   
   return (
@@ -42,7 +41,7 @@ function Home() {
           </div>
       <button className={stylingOn === true ? "button" : null} onClick={(() => setStylingOn(!stylingOn))}>{stylingOn === false? "Push me!" : "Push me again!"}</button>
       </div>    
-    </div>
+      </div>
   );
 }
 
